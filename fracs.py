@@ -64,9 +64,9 @@ def is_zero(frac):
 
 # -1 | 0 | +1
 def cmp_frac(frac1, frac2):
-  if(float(frac1) > float(frac2)):
+  if(frac2float(frac1) > frac2float(frac2)):
     return -1
-  elif(float(frac1) < float(frac2)):
+  elif(frac2float(frac1) < frac2float(frac2)):
     return 1
   else:
     return 0          
@@ -108,7 +108,10 @@ class TestFractions(unittest.TestCase):
     def test_is_zero(self):
         self.assertEqual(is_zero([0, 1]), True)
         
-    def test_cmp_frac(self): pass
+    def test_cmp_frac(self): 
+        self.assertEqual(cmp_frac([2,3], [2,3]), 0)
+        self.assertEqual(cmp_frac([4,3], [2,3]), -1)
+        self.assertEqual(cmp_frac([2,3], [5,3]), +1)
 
     def test_frac2float(self):
         self.assertEqual(frac2float([1, 2]), 0.5)
