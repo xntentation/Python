@@ -8,7 +8,7 @@ def add_frac(frac1, frac2):
     l = l1*m2 + l2*m1
     m = m1*m2
     gcd = math.gcd(l,m)
-    f = [ l /gcd , m / gcd ]
+    f = [ l //gcd , m // gcd ]
     return f
 
 # frac1 - frac2
@@ -20,7 +20,7 @@ def sub_frac(frac1, frac2):
     l = l1*m2 - l2*m1
     m = m1*m2
     gcd = math.gcd(l,m)
-    f = [ l /gcd , m / gcd ]
+    f = [ l //gcd , m // gcd ]
     return f
 
 # frac1 * frac2
@@ -32,7 +32,7 @@ def mul_frac(frac1, frac2):
     l = l1 * l2
     m = m1 * m2
     gcd = math.gcd(l,m)
-    f = [ l /gcd , m / gcd ]
+    f = [ l //gcd , m // gcd ]
     return f
 
 # frac1 / frac2
@@ -44,7 +44,7 @@ def div_frac(frac1, frac2):
     l = l1 * m2
     m = m1 * l2
     gcd = math.gcd(l,m)
-    f = [ l /gcd , m / gcd ]
+    f = [ l //gcd , m // gcd ]
     return f
 # bool, czy dodatni
 def is_positive(frac):
